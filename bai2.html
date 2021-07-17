@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let num =parseInt(prompt("Nhập dãy số bất kỳ"));
+  let str = num.toString();
+  let numbers = [];
+  for (let i = 0; i< str.length; i++){
+      if ((str[i] % 2 === 0) && (str[i+1]% 2 === 0)){
+            numbers.push(str[i],'-');
+      }else {
+          numbers.push(str[i]);
+      }
+  }document.write(numbers.join(''));
+</script>
+</body>
+</html>
